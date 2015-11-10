@@ -1,2 +1,2 @@
 # mean
-Mongo, Express, Angular and Node experiments.
+my attempts to be a MEAN dev.
