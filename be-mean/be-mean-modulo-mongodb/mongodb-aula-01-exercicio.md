@@ -12,8 +12,8 @@ mongoimport --db be-mean --collection restaurantes --drop --file restaurantes.js
 
 ## Contando os restaurantes
 
-    ```
-    db.restaurantes.find({}).count()
-    25359
-    ```
+```
+db.restaurantes.find({}).count()
+25359
+```
 
