@@ -4,10 +4,9 @@
 exports.insert = function(db, doc, callback) {
   	// TODO: implement
 	db.collection('movies').insertOne(doc, function(err, result) {
-    	callback(result);
+    	callback(null, result);
   	});
 
-	callback(null);
 };
 
 /*
@@ -18,21 +17,10 @@ exports.insert = function(db, doc, callback) {
  */
 exports.byDirector = function(db, director, callback) {
 
-
-	console.info('byDirector: ' + director);
-	// TODO: implement
-	var cursor = db.collection('movies').find( { 'director': director } ).sort({'title': 1});
-
-	console.info('movies: ' + cursor.size);
-
-	cursor.each(function(err, doc) {
-
-		if (doc != null) {
-        	console.dir(doc);
-		} else {
-        	callback();
-      	}
-	});
-
-	callback(null, []);
+	db.collection('movies')
+		.find( { 'director': director } )
+		.sort({'title': 1})
+		.toArray( function(err, docs) {
+			callback(null, docs);
+		});
 };
