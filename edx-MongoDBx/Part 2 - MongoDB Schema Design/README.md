@@ -228,4 +228,48 @@ Now, multikey indexes are powerful but, once again, be wary of arrays that grow 
 
 Large documents take up more bandwidth and multikey indexes on large arrays have some significant performance overhead on MongoDB 3.0's default storage engine and MMAPv1.
 
+## Retail application schema: product
+
+Now that you've learned some key MongoDB schema design principles, it's time to apply these principles and design a set of schemas for the retail MEAN stack
+application.
+
+Recall that there will be three schemas-- product, category, and user-- and these schemers will be written using Mongoose, the popular MongoDB ODM for Node.js.
+
+The most basic schema, the one that we'll talk about first, is the product schema.
+
+The general idea is this schema represents what you will display on an individual product view, so the product's name, a list of pictures, how much the product costs, and the category that the product belongs to.
+
+Since you did specify an underscore ID field in this schema, Mongoose will implicitly add one for you.
+The underscore ID field that Mongoose adds for you is just a standard MongoDB object ID.
+
+The product schema utilizes a couple of basic Mongoose features that you learned about in the Introduction to Mongoose lesson.
+
+First, this type property tells Mongoose what type to expect.
+Mongoose will try to cast values to the specified type.
+
+For instance, if you try to set the name field to the number two, Mongoose will convert two to a string for you.
+Mongoose will refuse to save if there was an error casting a value.
+
+For instance, if you set `price.amount`, which is expected to be a number to this particular string Mongoose will return an error when validating the document the required property our name price dot amount and currency means that Mongoose will not allow you to save a product that doesn't have a name, an amount, or a currency.
+
+Fields are optional by default in Mongoose, so unless you specify required, Mongoose will allow you to save a product where `price.amount` was not set.
+
+The enum property is available for string types.
+It specifies that the only allowable values of `price.currency` are USD, EUR, and GBP, which are the ISO 4217 currency codes for the US dollar, the European Union dollar, and the British pound sterling respectively.
+
+This match property for strings specifies that the string must match the given regular expression.
+In this case, you want to specify that image URLs start with http:// as a rudimentary security measure.
+
+The category field is somewhat mysterious right now.
+It's abstracted out behind this require call, which you will learn about in the category schema lesson.
+
+The category field though is important for the product schema because you'll want to query for products based on the category's properties.
+
+This is an instance of store what you query for.
+Category is a separate collection, but because you care about querying for products by category, you should inline category for optimal query performance, especially since there is a one-to-many relationship of categories
+to products.
+
+A product's category isn't going to change often. You will probably only change the product's category as part of an expensive database migration.
+
+But you will Inquiry by category often, which is why inlining category is a good idea in this case and thus an instance of store what you query for.
 
