@@ -186,3 +186,46 @@ The right MongoDB schema design always depends on the store what you query for p
 
 But always remember, arrays that grow without bound are always a bad choice in MongoDB.
 
+## MongoDB indexes
+
+Indexes are a way to get consistent performance from your queries as your data grows.
+Indexes are key to getting good performance from MongoDB.
+
+Now, if you're familiar with indexes in SQL databases, MongoDB indexes are pretty similar.
+
+Indexes are essentially a way for MongoDB to pre-compute the results of a query, like how the index of a book can tell you where to find a certain word without searching through the entire book.
+
+So when there are no indexes and you run a query like this, searching for users with name John, MongoDB will do a collection scan to find documents that match the query.
+
+That is, MongoDB will search every single document in the collection to find documents that match the query.
+This is OK for small data sets, but collection scans become more and more expensive as your data grows.
+
+Now, when you create an index by calling the create index function in the shell, MongoDB creates a data structure that maps the values of the name field to documents that have that value of the name field.
+
+So now when you ask MongoDB for documents where name is equal to John, MongoDB doesn't need to search every single document, it just reads from the map.
+
+Now, let's see how this works for a larger data set.
+So, for instance, in this case we've inserted five million documents and then one document with name John.
+
+Without an index, you'll notice that there's a slight delay in executing the query.
+Now, naturally a delay in searching through five million documents is not very web scale, so let's create an index and see what happens.
+
+So now we created an index on name, and let's re-run that query.
+As you'll see, the query is pretty instantaneous.
+
+MongoDB also has a notion of a multikey index.
+A multikey index is an index that keeps track of values in an array.
+Multikey indexes speed up queries that require scanning through arrays, like this names array.
+
+A collection scan would have to scan through every single array in every single document.
+Now, creating a multikey index is transparent.
+
+All you have to do is create an index on the array field.
+So when we execute this query searching for names, where names contains John, you'll notice that there's a bit of a delay in executing the query, because we haven't created an index on names yet.
+
+Now creating a multikey index again is transparent all you do is just use the create index function and specify the field names, and now when you re-run the query, you notice you get back the result instantaneously.
+Now, multikey indexes are powerful but, once again, be wary of arrays that grow without bound.
+
+Large documents take up more bandwidth and multikey indexes on large arrays have some significant performance overhead on MongoDB 3.0's default storage engine and MMAPv1.
+
+
