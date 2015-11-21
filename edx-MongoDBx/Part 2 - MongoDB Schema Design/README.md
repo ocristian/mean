@@ -6,6 +6,13 @@
 
 [Schema design principle: store what you query for](#schema-design-principle-store-what-you-query-for)
 
+[Schema design principle: principle of least cardinality](#schema-design-principle-principle-of-least-cardinality)
+
+[MongoDB indexes](#mongoDB-indexes)
+
+[Retail application schema: product](#retail-application-schema-product)
+
+[Retail application schema: category](#retail-application-schema-category)
 
 ## Overview of retail application
 
