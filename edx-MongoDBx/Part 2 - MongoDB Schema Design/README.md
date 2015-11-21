@@ -5,8 +5,7 @@
 In this chapter you will set up the object schemas for your retail means stack application.
 
 The final application will be structured something like this.
-<<pre>
-    
+<pre>    
      [mobile]  <------>  (   ionic   ) ( angularJs ) <------>  [ pc ]
 
                                  \           /
@@ -17,7 +16,6 @@ The final application will be structured something like this.
                                        |
 
                                   ( MongoDB )
-
 </pre>
 
 You will have a Node.js server that stores data in MongoDB.
