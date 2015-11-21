@@ -1,8 +1,11 @@
 # MongoDB Schema Design
 
 [Overview of retail application](#overview-of-retail-application)
+
 [Introduction to mongoose](#introduction-to-mongoose)
-[Schema design principle: store what you query for](#schema-design-principle:-store-what-you-query-for)
+
+[Schema design principle: store what you query for](#schema-design-principle-store-what-you-query-for)
+
 
 ## Overview of retail application
 
