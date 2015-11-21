@@ -4,7 +4,7 @@
 exports.insert = function(db, doc, callback) {
   	// TODO: implement
 	db.collection('movies').insertOne(doc, function(err, result) {
-    	callback(null, result);
+    	callback(err, result);
   	});
 
 };
@@ -21,6 +21,6 @@ exports.byDirector = function(db, director, callback) {
 		.find( { 'director': director } )
 		.sort({'title': 1})
 		.toArray( function(err, docs) {
-			callback(null, docs);
+			callback(err, docs);
 		});
 };
