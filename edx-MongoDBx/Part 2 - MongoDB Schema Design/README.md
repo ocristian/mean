@@ -143,11 +143,46 @@ In other words, MongoDB's lack of joins may seem intimidating to developers from
 
 As you'll see when you design the API for your retail app, each API endpoint will be primarily responsible for loading data from a single collection.
 
+## Schema design principle: principle of least cardinality
 
+The other schema design principle you will learn about is known as the principle of least cardinality.
 
+This principle provides you a guideline for how to resolve one to many and many to many relationships with MongoDB. 
 
+MongoDB documents can contain arrays.
+There's nothing to stop you from including every single review a user posts in the user document.
 
+Depending on your use case, that may be a decent idea. 
+But beware. Arrays that grow without bound are a very bad MongoDB anti-pattern.
 
+If you can't limit the number of reviews a user can post, your document size will become massive.
+This is bad for MongoDB performance.
+This is bad because of MongoDB's 16 megabyte document size limit, and bad because it wastes network throughput.
 
+As a web developer, you should defend your network throughput from unnecessary data because network throughput will most always be your scarcest resource.
 
+The ideal schema design in the case of an on unbounded number of reviews would be for reviews to track which user posted them, rather than listing out the reviews in the user document.
+
+This is an instance of the principle of least cardinality.
+Tracking the user in the review document results in smaller array sizes than tracking the review documents in the user documents.
+This is because in this schema a review is posted by exactly one user.
+But a user can post an unlimited number of reviews.
+This principle can also be applied to many to many relationships.
+
+Suppose you were to design a MongoDB schema for a site like meetup.com, where users register for events with a capped number of attendees.
+
+In SQL the schema design would be easy.
+You would have a mapping table for users and events. This table would store rows that contain a user ID and an event ID.
+
+In MongoDB the solution is not quite as cut and dry.
+If you expect users to attend numerous events and events that have millions of attendees, a mapping collection analogous to an SQL mapping table would likely be the right choice.
+
+However, if you assume that each event will only have at most a few hundred attendees, you can de-normalize this many to many relationship by keeping a list of IDs representing attendees in the event document itself.
+
+This is because you assume that the number of attendees for any given event is never going to grow without bound and will be, at most, a couple hundred.
+
+Go take the number 500, for argument's sake, as gospel.
+The right MongoDB schema design always depends on the store what you query for principle.
+
+But always remember, arrays that grow without bound are always a bad choice in MongoDB.
 
