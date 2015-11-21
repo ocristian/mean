@@ -1,5 +1,9 @@
 # MongoDB Schema Design
 
+[Overview of retail application](#overview-of-retail-application)
+[Introduction to mongoose](#introduction-to-mongoose)
+[Schema design principle: store what you query for](#schema-design-principle:-store-what-you-query-for)
+
 ## Overview of retail application
 
 In this chapter you will set up the object schemas for your retail means stack application.
@@ -273,3 +277,4 @@ A product's category isn't going to change often. You will probably only change 
 
 But you will Inquiry by category often, which is why inlining category is a good idea in this case and thus an instance of store what you query for.
 
+## Retail application schema: category
