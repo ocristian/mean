@@ -288,3 +288,87 @@ A product's category isn't going to change often. You will probably only change 
 But you will Inquiry by category often, which is why inlining category is a good idea in this case and thus an instance of store what you query for.
 
 ## Retail application schema: category
+
+
+<pre>
+                             ELECTRONICS
+                            /           \  
+                           /             \
+                          /               \
+                        iPhone            COMPUTER   
+                        /   \              /     \
+                       /     \            /       \
+                    Android iPhone     Apple        PC
+                                         |         /  \ 
+                                         |        /    \
+                                    Macbook Pro  Dell  HP
+</pre>                
+
+One way your retail application will enable users to discover new products is through a category hierarchy.
+
+Your user will be able to query for a list of all products under the category phones, which will include results for both Android and iOS.
+
+Your user will also be able to drill down into more specific categories like phones that run iOS or the more general category of electronics.
+
+With this in mind, you need to design your category schema in order to be able to efficiently answer the question which products are in the electronics category, as well as the question which products are in the iOS category.
+
+In addition, you want to be able to efficiently answer the question what categories is iOS a subcategory of in order to enable users to browse the category hierarchy.
+
+For instance, if you're looking at the laptops category, but decide you need something with a bit more processing power you should be able to navigate up to the Computers category and look at the subcategories.
+
+The most efficient way to do this is to store an array with all of the ancestor categories in each category document.
+
+The ancestor categories are all the categories that are above the given category in this tree.
+
+For instance, the iOS category's ancestors are electronics and phones.
+So the document will have an array that contains electronics and phones.
+
+Here's how this schema looks in Mongoose.
+
+```java
+    var categorySchema = {
+        _id: { type: String },
+        parent: {
+            type: String,
+            ref: 'Category'
+        },
+        ancestors: [{
+            type: String,
+            ref: 'Category'
+        }]
+    };
+```
+The underscore ID field will double as the category name.
+For instance, books or electronics.
+There is a parent field, which references the parent category.
+And then there's also a list of the ancestor categories.
+
+With multikey indexes, you now have an efficient way to answer questions like, what are all the subcategories of electronics, what are the child categories of phones, and what are the ancestry categories of Android.
+
+To find all categories that are subcategories of electronics, you would search for documents where the ancestors array contains the string electronics.
+
+As you can see, you get back phones, electronics,
+and Android.
+
+To find categories that are child categories of phones, you would search for documents where the parent field is equal to the string phones.
+
+You need this separate field because MongoDB does not currently have a way to query for elements where the last element of the ancestor's array is equal to phones.
+
+Finding the ancestor categories of Android is trivial.
+The Android document has this data embedded so all you need to do is query for the document.
+
+Recall that you also embedded this category schema in the product schema that you learned about in the product schema lesson.
+
+Mongoose's support for embedding schemas and other schemas is somewhat limited, but you can reuse the schema by exporting a plain JavaScript object and then reusing it in the products schema.
+
+In other words, in category.js, you export this category schema variable, which is a plain old JavaScript object in addition to this Mongoose schema, and then reuse it in the product scheme.
+
+With this design, the good features of the category schema also apply to the product schema.
+
+In particular, finding all products under the phones category is simple and efficient.
+
+All you need to do is find products where category.acnestors contains phones,
+and you get back the iPhone 6.
+
+It's simple and efficient just like finding all subcategories of the phones category.
+
