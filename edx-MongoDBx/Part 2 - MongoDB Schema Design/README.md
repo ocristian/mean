@@ -379,6 +379,36 @@ It's simple and efficient just like finding all subcategories of the phones cate
 
 The third and final schema that you will use in the retail application is the user schema.
 
+```javascript
+    module.exports = new mongoose.Schema({
+      profile: {
+        username: {
+          type: String,
+          required: true,
+          lowercase: true
+        },
+        picture: {
+          type: String,
+          required: true,
+          match: /^http:\/\//i
+        }
+      },
+      data: {
+        oauth: { type: String, required: true },
+        cart: [{
+          product: {
+            type: mongoose.Schema.Types.ObjectId
+          },
+          quantity: {
+            type: Number,
+            default: 1,
+            min: 1
+          }
+        }]
+      }
+    });
+```
+
 This schema defines the data that you'll store about individual users.
 The user document will contain the user's username, their profile picture, their Facebook oauth ID, and the list of products in their cart.
 
