@@ -472,7 +472,6 @@ However, if you were to add fields to the profile, say, a job title field, then 
 
 ## Advanced mongoose features: virtuals
 
-
 Mongoose has numerous handy features that make it an indispensable tool for web development to Node.js.
 
 Virtuals are one such feature.
@@ -484,6 +483,15 @@ Displaying a price as, say, 25 USD is not a very good choice for user experience
 
 25 preceded by a dollar sign is a more professional looking choice.
 
+```javascript
+    /*
+     * Human-readable string form of price - "$25" rather
+     * than "25 USD"
+     */
+    schema.virtual('displayPrice').get(function() {
+        return currencySymbols[this.price.currency] + '' + this.price.amount;
+    });
+```
 To declare a virtual you use this virtual function on your schema.
 
 You can then declare a getter function that tells Mongoose how to compute this property.
@@ -497,8 +505,12 @@ However, virtuals have some nice properties that make them a more convenient cho
 
 First of all, the display price virtual will be exposed as a plain old property on product documents.
 
-There's no need for any actual function calls. 
+There's no need for any actual function calls.
 
+```javascript
+    schema.set('toObject', { virtuals: true });
+    schema.set('toJSON', { virtuals: true });
+```
 Secondly, notice these two object toObject and toJSON properties that you're setting on your schema.
 
 The toObject and toJSON functions are Mongoose's methods for converting a Mongoose document into a plain old JavaScript object.
