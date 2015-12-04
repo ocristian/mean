@@ -527,7 +527,7 @@ This means that calling JSON.stringify on a product document will produce string
 
 In addition, the JavaScript object returned by toObject will also include the display price property.
 
-Let's see what the output of the JSON.stringify function looks like when you call it with the product object.
+Let's see what the output of the ```javascript JSON.stringify ``` function looks like when you call it with the product object.
 
 As you can see, the output includes this display price virtual.
 This is very useful when you go through the rest API chapter because this will enable your rest API to send computed virtuals along with your documents to the angular JS client.
