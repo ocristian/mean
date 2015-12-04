@@ -18,7 +18,7 @@
 
 [Advanced mongoose features: virtuals](#advanced-mongoose-features-virtuals)
 
-[Advanced mongoose features: custom setters + sorting by currency](#advanced-mongoose-features-custom-setters-sorting-by-currency)
+[Advanced mongoose features: custom setters + sorting by currency](#advanced-mongoose-features-custom-setters--sorting-by-currency)
 
 
 ## Overview of retail application
