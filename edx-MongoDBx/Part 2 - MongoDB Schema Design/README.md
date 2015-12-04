@@ -8,7 +8,7 @@
 
 [Schema design principle: principle of least cardinality](#schema-design-principle-principle-of-least-cardinality)
 
-[MongoDB indexes](#mongoDB-indexes)
+[MongoDB indexes](#mongodb-indexes)
 
 [Retail application schema: product](#retail-application-schema-product)
 
