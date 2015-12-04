@@ -562,6 +562,7 @@ In this case, every time somebody sets the price dot amount field, Mongoose exec
     set: function(v) {
       this.internal.approximatePriceUSD = v / (fx()[this.price.currency] || 1);
       return v;
+    }  
 ```
 In this case, this function updates the internal.approximatePriceUSD property to reflect the changes in the price dot amount.
 
