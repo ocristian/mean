@@ -18,6 +18,8 @@
 
 [Advanced mongoose features: virtuals](#advanced-mongoose-features-virtuals)
 
+[Advanced mongoose features: custom setters + sorting by currency](#advanced-mongoose-features-custom-setters-sorting-by-currency)
+
 
 ## Overview of retail application
 
@@ -529,5 +531,8 @@ Let's see what the output of the JSON.stringify function looks like when you cal
 
 As you can see, the output includes this display price virtual.
 This is very useful when you go through the rest API chapter because this will enable your rest API to send computed virtuals along with your documents to the angular JS client.
+
+## Advanced mongoose features: custom setters + sorting by currency
+
 
 
