@@ -469,7 +469,9 @@ There is no way that the user can use this modify user profile function to modif
 
 However, if you were to add fields to the profile, say, a job title field, then this modify user profile function would have to change.
 
+
 ## Advanced mongoose features: virtuals
+
 
 Mongoose has numerous handy features that make it an indispensable tool for web development to Node.js.
 
