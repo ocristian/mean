@@ -296,11 +296,11 @@ But you will Inquiry by category often, which is why inlining category is a good
 
 
 <pre>
-                             ELECTRONICS
-                            /            \  
-                           /              \
-                          /                \
-                        PHONE             COMPUTER   
+                              ELECTRONICS
+                            /             \  
+                           /               \
+                          /                 \
+                        PHONE              COMPUTER   
                         /    \             /      \
                        /      \           /         \
                     Android  iPhone    Apple         PC
