@@ -297,16 +297,16 @@ But you will Inquiry by category often, which is why inlining category is a good
 
 <pre>
                              ELECTRONICS
-                            /           \  
-                           /             \
-                          /               \
-                        iPhone            COMPUTER   
-                        /   \              /     \
-                       /     \            /       \
-                    Android iPhone     Apple        PC
-                                         |         /  \ 
-                                         |        /    \
-                                    Macbook Pro  Dell  HP
+                            /            \  
+                           /              \
+                          /                \
+                        PHONE             COMPUTER   
+                        /    \             /      \
+                       /      \           /         \
+                    Android  iPhone    Apple         PC
+                                         |          /   \ 
+                                         |         /     \
+                                    Macbook Pro   Dell   HP
 </pre>                
 
 One way your retail application will enable users to discover new products is through a category hierarchy.
