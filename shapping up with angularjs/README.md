@@ -22,12 +22,12 @@ Automated testing, BDD and TDD.
 
 is a marker on a HTML tag that tells Angular to run or reference some JavaScript code.
 
-```javascript
-  ng-controller = "StoreController"
-```
 <pre>
    (directive)      (js function)  
 </pre>
+```javascript
+  ng-controller = "StoreController"
+```
 
 ##### Modules
 
@@ -61,7 +61,8 @@ working with data, controllers are where we define our app's behavior by definin
 
     app.controller('StoreController', function(){
     });
-   })
+
+  })();
 ```
 
 storing data inside the controller
@@ -80,7 +81,8 @@ storing data inside the controller
       price: 20.90,
       description: '.....',
     } 
-  })
+
+  })();
 ```
 
 attaching the controller
@@ -134,8 +136,6 @@ will only show the element if the value of the Exression is true
 ```
 
 ### Filters
-
-#### Filters
 
 ##### currency
 
