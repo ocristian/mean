@@ -6,6 +6,27 @@
     this.products = gems;               
   });
 
+  app.controller('TabController', function(){
+    this.tab = 1;
+    
+    this.setTab = function(newTab){
+      this.tab = newTab;
+    }
+    
+    this.isSet = function(tab){
+      return this.tab === tab;
+    }
+
+  });
+
+  app.controller('GalleryController', function(){
+    this.current = 0;
+
+    this.setCurrent = function(newGallery){
+      this.current = newGallery || 0;
+    };
+  });
+
   var gems = [
     {
       name: 'Azurite',
@@ -74,7 +95,7 @@
       images: [
         "images/gem-06.gif",
         "images/gem-07.gif",
-        "images/gem-10.gif"
+        "images/gem-09.gif"
       ],
       reviews: [
         {

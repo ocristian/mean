@@ -213,7 +213,7 @@ make the app more interactive
 show the panel if tab is the right number
 
 ```html
-  ng-show="tab ===1"
+  ng-show="tab === 1"
 ```
 
 ##### ng-init
@@ -232,29 +232,29 @@ setting the active class
   <li ng-class="{class_name:tab === 1 }">
 ```
 
-#### Panel controller
+#### Tab Controller
 
 ```javascript
-  app.controller("PanelController", function(){
+  app.controller('TabController', function(){
     this.tab = 1;
+    
+    this.setTab = function(newTab){
+      this.tab = newTab;
+    }
+    
+    this.isSet = function(tab){
+      return this.tab === tab;
+    }
 
-    this.selectTab = finction(setTab){
-      this.tab = setTab;
-    };
-
-    this.isSelected = function(checkTab){
-      return this.tab === checkTab;
-    };
   });
 ```
 
 ```html
-  <section ng-controller="PanelController as panel">
+  <section ng-controller="TabController as tab">
     ...
-    <li ng-class="{ active: panel.isSelected(1) }"
-    <a href ng-click="panel.selectTab(1)">
-    ... 
-
+    <li ng-class="{ active:tab.isSet(1) }">
+      <a href ng-click="tab.setTab(1)">Description</a>
+    </li>
 ```
 
 #### Forms and models
