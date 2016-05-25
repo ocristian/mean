@@ -259,6 +259,8 @@ setting the active class
 
 #### Forms and models
 
+letting users to add content
+
 ```javascript
   reviews: [
     {
