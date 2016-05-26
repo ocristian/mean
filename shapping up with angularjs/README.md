@@ -320,6 +320,19 @@ allow us to call a function when the form is submitted
 
 turns out Angular has some great client side validations we can use with our directives
 
+novalidate - to turn Off default HTML Validation
+required  - to mark required fields
+
+##### Preventing the Submit
+
+want to submit only if form is valid
+
+```html
+  <form name="reviewForm" ng-controller="ReviewController as reviewCtrl"
+                              ng-submit="reviewForm.$valid && reviewCtrl.addReview(product)" nonvalidate>
+```
+
+
 
 
 
