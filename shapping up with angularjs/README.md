@@ -403,17 +403,17 @@ it's indicated to for widgets
 ```
 
 ```javascript
-    app.directive('productPanels', function(){
+  app.directive('productPanels', function(){
 
-      return {
-        restrict: 'E',
-        templateUrl: 'product-panels.html'
+    return {
+      restrict: 'E',
+      templateUrl: 'product-panels.html'
 
-        controller:function(){
-          . . .
-        },
-        controllerAs: 'panels'
-      };
+      controller:function(){
+        . . .
+      },
+      controllerAs: 'panels'
+    };
 
-    });
+  });
 ```
