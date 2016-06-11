@@ -1,4 +1,4 @@
-# Shapping up with Angulas.js
+# Shapping up with Angular.js
 
 A client-side JavaScript Framewoek for adding interactivity to HTML
   
@@ -333,13 +333,87 @@ want to submit only if form is valid
 ```
 
 
+### Creating Directives
+
+allow you to write HTML that express the behavior of your application
+
+can be used to:
+* Expressing complex UI
+* Calling events and registering event hendlers
+* Reusing common components
 
 
+#### Using ng-include for Templates
+
+<pre>
+      directive  name of file to include
+          |                | 
+</pre>
+```html
+  <h3 ng-include="product-title.html"></h3>
+```
+
+product-title.html
+```html
+  {{product.name}}
+  <em class="pull-right">${{product.price}}</em>
+```
+
+#### building custom Directives
+
+```html
+  <product-title></product-tiltle>
+```
+
+```javascript
+    app.directive('productTitle', function(){
+
+      return {
+        restrict: 'E', //type of directive, E - Element, A - attribute
+        templateUrl: 'product-title.html'
+      };
+
+    });
+```
 
 
+#### attributes vs element Directives
+don't use self-closing tag, some browsers don't like this
 
+##### attribute
+it's indicated for mixin behaviors, like a tooltip
 
+```html
+  <h3 product-title></h3>
+```
 
+##### element
+it's indicated to for widgets
 
+```html
+  <product-title></product-title>
+```
 
+#### Directive Controllers
 
+```html
+  <product-panels ng-controller="PanelController as panels">
+    . . .
+  </product-panels>
+```
+
+```javascript
+    app.directive('productPanels', function(){
+
+      return {
+        restrict: 'E',
+        templateUrl: 'product-panels.html'
+
+        controller:function(){
+          . . .
+        },
+        controllerAs: 'panels'
+      };
+
+    });
+```

@@ -48,14 +48,14 @@
           </li>
         </ul>
 
-        <div class="panel" ng-show="tab.isSet(1)">
-          <h4>Description</h4>
-          <blockquote>{{product.description}}</blockquote>
-        </div>
+        <!--  Description Tab's Content  -->
+        <div ng-show="tab.isSet(1)" >
+          <product-description></product-description>
+        </div>        
 
-        <div class="panel" ng-show="tab.isSet(2)">
-          <h4>Specs</h4>
-          <blockquote>Shine: {{product.shine}}</blockquote>
+        <!--  Spec Tab's Content  -->
+        <div ng-show="tab.isSet(2)">
+          <product-specs></product-specs>
         </div>
 
         <!-- Review Tab -->

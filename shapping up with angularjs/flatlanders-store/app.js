@@ -38,6 +38,32 @@
 
   });
 
+  app.directive('productDescription', function(){
+    return {
+      restrict: 'E',
+      templateUrl: 'product-description.html'
+    };
+  });  
+
+  app.directive('productSpecs', function(){
+    return {
+      restrict: 'E',
+      templateUrl: 'product-specs.html'
+    };
+  }); 
+
+  app.directive('productTabs', function(){
+    return {
+      restrict: 'E',
+      templateUrl: 'product-tabs.html',
+      controller:function(){
+        
+      },
+      controllerAs: 'tab'
+    };
+  });
+     
+
   var gems = [
     {
       name: 'Azurite',
