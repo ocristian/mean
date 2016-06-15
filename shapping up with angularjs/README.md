@@ -417,3 +417,62 @@ it's indicated to for widgets
 
   });
 ```
+
+### Dependencies
+
+Organizing our code, applying some refactor
+
+##### adding our product related directivies in a products.js file
+
+new module called store-product just for Product stuffs we create a
+```javascript
+  (function(){
+    var app = angular.module('store-products', []);
+
+    app.directive('productPanels', function(){...});
+    app.directive('productGallery', function(){...});
+    app.directive('productDescription', function(){...});
+  })();
+```
+
+##### adding our new dependencie on the store module
+
+new module called store-product just for Product stuffs we create a
+```javascript
+  (function(){
+    var app = angular.module('store', ['store-products']);
+    ...
+  })();
+```
+now, store module depends on store-products
+
+##### to make this work, we need to include the new file, products.js, inside index.html
+
+```html
+  <!DOCTYPE html>
+  <html ng-app="store">
+    <head>...</head>
+    <body ng-controller="StoreController as store">
+      ...
+      <script src="angular.js"></script>
+      <script src="app.js"></script>
+      <script src="products.js"></script>
+    </body>  
+```
+
+
+#### Organizing Appication Modules
+
+Split Modules around functionality:
+* app.js - top level module attached via ng-app
+* products.js - all functionality for products and only products
+
+
+
+
+
+
+
+
+
+
