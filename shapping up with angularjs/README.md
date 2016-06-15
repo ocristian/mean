@@ -424,7 +424,7 @@ Organizing our code, applying some refactor
 
 ##### adding our product related directivies in a products.js file
 
-new module called store-product just for Product stuffs we create a
+new module called store-products only for Product stuffs
 ```javascript
   (function(){
     var app = angular.module('store-products', []);
@@ -435,16 +435,16 @@ new module called store-product just for Product stuffs we create a
   })();
 ```
 
-##### adding our new dependencie on the store module
+##### adding our new dependency on the store module
 
-new module called store-product just for Product stuffs we create a
+now, store module depends on store-products
 ```javascript
   (function(){
     var app = angular.module('store', ['store-products']);
     ...
   })();
 ```
-now, store module depends on store-products
+
 
 ##### to make this work, we need to include the new file, products.js, inside index.html
 
@@ -466,6 +466,7 @@ now, store module depends on store-products
 Split Modules around functionality:
 * app.js - top level module attached via ng-app
 * products.js - all functionality for products and only products
+
 
 
 
