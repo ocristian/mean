@@ -467,12 +467,96 @@ Split Modules around functionality:
 * app.js - top level module attached via ng-app
 * products.js - all functionality for products and only products
 
+### Services
+
+Given additional functionality to your Controller
+* feching JSON data from a web service with $http
+* logging messages to the javascript console with $log
+* filtering an array with $filter
+
+** all built-in services start with a $ sign ... angular way ...
+
+#### $http
+
+to make async request to a server
+
+using as a function with an options object:
+```javascript
+  $http({ method: 'GET', url: '/products.json' });
+```
+
+using shortcut methods:
+```javascript
+  $http.get( '/products.json', {apiKey: 'myApiKey' });
+```
+
+both return a Promise object with .success() and .error()
+Promise object allows you to do callbacks, like success or error.
+
+if we use $http to fech a JSON, the result will be automatically decoded into javascript objects and arrays
+
+#### using services like $http
+
+_by funcky array syntax_
+<pre>
+                                  service name
+                                            service name as an argument (dependency injection)
+                                        |                | 
+</pre>
+```javascript
+  app.controller('SomeController', [ '$http', function($http){
+  } ]);
+```
+
+if needed more than one object:
+```javascript
+  app.controller('SomeController', [ '$http', '$log', function($http, $log){
+  } ]);
+```
+
+#### how Services are Registered
+
+```javascript
+  app.controller('SomeController', [ '$http', '$log', function($http, $log){
+  } ]);
+```
+
+* when Angular load it created the Injector
+* when built-in services load, they register with the Injector as available libraries
+* when the application load, the Controller is register with the Injector
+  - telling when I run, I need $http and $log services
+* when our page load and your Controller is used, Injector grabs these services that controller need and pass then in as arguments
+* That is Dependency Injection!
+
+#### additional $http functionality
+
+```javascript
+  $http.post( '/path/to/resource.json', { param: 'value' });
+```
+
+```javascript
+  $http.delete( '/path/to/resource.json' );
+```
+
+_using CONFIG object_
+```javascript
+  $http({ method: 'OPTIONS', url: '/path/to/resource.json'});
+
+  $http({ method: 'PATCH', url: '/path/to/resource.json'});
+
+  $http({ method: 'TRACE', url: '/path/to/resource.json'});
+```
 
 
 
+### references
 
+[@codeschool's Shaping up with Angular.js](https://www.codeschool.com/courses/shaping-up-with-angular-js)
 
-
+[AngularJS API Docs](https://docs.angularjs.org/api)
+[egghead.io](https://egghead.io)
+[thinkster.io](https://thinkster.io)
+[kapeli](kapeli.com/dash)
 
 
 

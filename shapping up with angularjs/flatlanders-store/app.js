@@ -1,10 +1,16 @@
 (function(){
 
   var app = angular.module('gemStore', ['store-directivies']);
-  
-  app.controller('StoreController', function(){
-    this.products = gems;               
-  });
+
+  app.controller('StoreController', [ '$http', function($http){
+    var store = this;
+    store.products = [];
+    
+    $http.get('store-products.json').success(function(data){
+      store.products = data;
+    });
+    
+  } ]);  
 
   app.controller('ReviewController', function(){
     this.review = {};
@@ -17,7 +23,8 @@
 
   });
 
-  var gems = [
+  var gems = 
+  [
     {
       name: 'Azurite',
       description: "Some gems have hidden qualities beyond their luster, beyond their shine... Azurite is one of those gems.",
