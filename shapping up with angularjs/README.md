@@ -557,7 +557,7 @@ _using CONFIG object_
 
 [thinkster.io](https://thinkster.io)
 
-[kapeli](https://kapeli.com/dash)
+[Dash - instant offline access to API Docs](https://kapeli.com/dash)
 
 
 
