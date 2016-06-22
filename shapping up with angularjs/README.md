@@ -532,9 +532,7 @@ if needed more than one object:
 
 ```javascript
   $http.post( '/path/to/resource.json', { param: 'value' });
-```
 
-```javascript
   $http.delete( '/path/to/resource.json' );
 ```
 
@@ -554,8 +552,11 @@ _using CONFIG object_
 [@codeschool's Shaping up with Angular.js](https://www.codeschool.com/courses/shaping-up-with-angular-js)
 
 [AngularJS API Docs](https://docs.angularjs.org/api)
+
 [egghead.io](https://egghead.io)
+
 [thinkster.io](https://thinkster.io)
+
 [kapeli](kapeli.com/dash)
 
 
