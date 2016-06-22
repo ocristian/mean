@@ -557,7 +557,7 @@ _using CONFIG object_
 
 [thinkster.io](https://thinkster.io)
 
-[kapeli](kapeli.com/dash)
+[kapeli](https://kapeli.com/dash)
 
 
 
