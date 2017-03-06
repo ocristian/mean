@@ -49,16 +49,16 @@ Components / Templates / Services
 
 ####Sample App Architecture
 
-    #####Welcome Component
+    Welcome Component
 
-    ####Product List Component
-        Star Component
+    Product List Component
+     Star Component
 
-    ####Product Detail
-        Reuse Star Component
+    Product Detail
+     Reuse Star Component
 
-    ####App Component
-       Product Data    
+    App Component
+     Product Data    
 
 
 ####TypeScript (typescriptlang.org/playground)
