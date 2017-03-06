@@ -1,2 +1,2 @@
 # mean
-my attempts to be a MEAN dev.
+being a MEAN dev.
