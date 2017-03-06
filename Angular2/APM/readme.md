@@ -72,14 +72,14 @@ Components / Templates / Services
     Code files that organize the app into cohesive blocks of functionality
     Organize, Modularize and Promote our app boundaries
 
-    #####Root Angular Module
-        Called App Module
-        Any Component belongs fom only one component
+    Root Angular Module
+     Called App Module
+     Any Component belongs fom only one component
 
-    #####Feature Angular Module
-        Group of Features
+    Feature Angular Module
+     Group of Features
 
-    #####Shared Module
+    Shared Module
 
 ####App Startup
 
