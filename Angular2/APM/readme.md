@@ -1,6 +1,6 @@
 ##Getting started with Angular 2
 
-#### runing the app
+####runing the app
 1. Open a command prompt in the project's root directory (APM)
 2. Type: ```npm install ```
 3. Type: ```npm start ```
@@ -15,11 +15,12 @@ Components / Templates / Services
 Angular is
     JS framework to build client-side apps
 
-Why?
-    Expressive HTML
-    Porwer full Data Bindig
-    Modular by Design
-    Built-in back-end integration
+* Why?
+  * Expressive HTML
+  * Porwer full Data Bindig
+  * Modular by Design
+  * Built-in back-end integration
+
 
 2
     Build for speed
