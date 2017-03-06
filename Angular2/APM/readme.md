@@ -12,7 +12,7 @@
 
 Components / Templates / Services
 
-Angular is
+#####Angular is
     JS framework to build client-side apps
 
 * Why?
@@ -21,118 +21,99 @@ Angular is
   * Modular by Design
   * Built-in back-end integration
 
+* 2
+  * Build for speed
+  * Modern
+  * Simplified API
+  * Enhances Productivity
 
-2
-    Build for speed
-    Modern
-    Simplified API
-    Enhances Productivity
-
-Anatomy
+####Anatomy
 
     App = Components
 
     Component = Template(View) + Class(Properties + Methods) + Metada 
 
-Modules
-    Organize apps
-        Root Angular Module + Componentes
-        Feature Angular Module + Componentes
+####Modules
+    * Organize apps
+      * Root Angular Module + Componentes
+      * Feature Angular Module + Componentes
 
+####Prerequisities
+    * Required
+      * JS
+      * HTML
+      * CSS
 
-Prerequisities
+    * Helpful
+      * OO
 
-    Required
-        JS
-        HTML
-        CSS
+####Sample App Architecture
 
-    Helpful
-        OO
+    #####Welcome Component
 
-
-Sample App Architecture
-
-    Welcome Component
-
-    Product List Component
+    ####Product List Component
         Star Component
 
-    Product Detail
+    ####Product Detail
         Reuse Star Component
 
-    App Component
-    
-    Product Data    
+    ####App Component
+       Product Data    
 
 
-TypeScript (typescriptlang.org/playground)
+####TypeScript (typescriptlang.org/playground)
+    * Superset of JS
+    * Transpiles to plain JS
+    * Strongly typed
+    * Class-based OO
 
-    Superset of JS
-    Transpiles to plain JS
-    Strongly typed
-    Class-based OO
-
-
-
-Angular Modules
+####Angular Modules
 
     Code files that organize the app into cohesive blocks of functionality
     Organize, Modularize and Promote our app boundaries
 
-    Root Angular Module
-
+    #####Root Angular Module
         Called App Module
         Any Component belongs fom only one component
 
-    Feature Angular Module
-
+    #####Feature Angular Module
         Group of Features
 
-    Shared Module
+    #####Shared Module
 
-App Startup
+####App Startup
 
     Index.html -> Systemjs.config.js -> main.ts -> app.module.ts -> app.component.ts -> index.html
 
 
-Components
+####Components
+    * Template 
+      * View layout 
+      * Created with HTML
+      * Includes binding and directives
 
-    Template 
-        View layout 
-        Created with HTML
-        Includes binding and directives
+    * + Class (Properties + methods)
+      * Code supporting the view
+      * Created with TypeScript
+      * Properties: data
+      * Methods: logic
 
+    * + Metadata
+      * Extra data for Angular
+      * Defined with a decorator
 
-    + Class (Properties + methods)
-        Code supporting the view
-        Created with TypeScript
-        Properties: data
-        Methods: logic
+####Checklist
+    * Class
+      * clear name
+      * export keyword
+      * Data in properties
 
-    + Metadata
-        Extra data for Angular
-        Defined with a decorator
-
-
-    Checklist
-
-        Class
-            clear name
-
-            export keyword
-
-            Data in properties
-
-        Metadata
-            Component decorator, prifix with @
-
-            selector: Component name in HTML
-
-            template: Views HTML
-
-        Import
-            where to find dependencies  
+    * Metadata
+      * Component decorator, prifix with @
+      * selector: Component name in HTML
+      * template: Views HTML
+      * Import
+        * where to find dependencies  
 
 
 
