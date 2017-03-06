@@ -1,0 +1,616 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pro",
+				"product\tscript"
+			],
+			[
+				"nu",
+				"number\tkeyword"
+			],
+			[
+				"ng",
+				"ngModel\tAngular 2 ngModel Snippet"
+			],
+			[
+				"title",
+				"title\tAttr"
+			],
+			[
+				"ti",
+				"title\t<title>"
+			],
+			[
+				"in",
+				"info"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"movi",
+				"movie"
+			],
+			[
+				"im",
+				"img\tTag"
+			],
+			[
+				"bs3",
+				"bs3-col\tbs3-col"
+			],
+			[
+				"bs",
+				"bs3-col\tbs3-col"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"h",
+				"html5\tSimple HTML5 Boilerplate"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/products/product-list.component.ts",
+			"settings":
+			{
+				"buffer_size": 1202,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/products/product.ts",
+			"settings":
+			{
+				"buffer_size": 201,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/products/product-list.component.html",
+			"settings":
+			{
+				"buffer_size": 2034,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/app.module.ts",
+			"settings":
+			{
+				"buffer_size": 469,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 307.0,
+		"last_filter": "PackaControlI",
+		"selected_items":
+		[
+			[
+				"PackaControlI",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"HTML: Wrap Selection With Tag"
+			],
+			[
+				"json",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"jso",
+				"Set Syntax: JSON"
+			],
+			[
+				"markdown",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Pretty",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			]
+		],
+		"width": 488.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/cristian/programming/classes/Angular2/APM/apm.sublime-project",
+		"/Users/cristian/Library/Application Support/Sublime Text 3/Packages/TypeScript/TypeScript.sublime-settings",
+		"/Users/cristian/programming/classes/Angular2/APM/index.html",
+		"/Users/cristian/programming/classes/Angular2/APM/api/products/products.json",
+		"/Users/cristian/Desktop/test/003.xml",
+		"/Users/cristian/Desktop/Codility/CarTrawler/cars_sorted.txt",
+		"/Users/cristian/Desktop/Codility/CarTrawler/cars.txt",
+		"/Users/cristian/programming/java/workspace/olympics/src/main/resources/schedule.csv",
+		"/Users/cristian/programming/java/workspace/olympics/src/main/resources/scd.csv",
+		"/Users/cristian/programming/classes/coursera/responsive_web_basics/1_1_code/index.html",
+		"/Users/cristian/programming/repositories/mean-box/edx-MongoDBx/Part 2 - MongoDB schema design/README.md",
+		"/Users/cristian/Desktop/correios.wsdl",
+		"/Users/cristian/Desktop/AtendeCliente.wsdl.webarchive",
+		"/Users/cristian/programming/java/workspace/das-boot/Readme.md",
+		"/Users/cristian/programming/repositories/mean-box/edx-MongoDBx/Part 2 - MongoDB schema design/chapter2/student.js",
+		"/Users/cristian/Desktop/GVT",
+		"/Users/cristian/programming/repositories/mean-box/edx-MongoDBx/Part 2 - MongoDB schema design/chapter2/README.md",
+		"/Users/cristian/programming/repositories/mean-box/edx-MongoDBx/Part 2 - MongoDB schema design/chapter2/package.json",
+		"/Users/cristian/programming/repositories/mean-box/edx-MongoDBx/Part 2 - MongoDB schema design/chapter2/course.js",
+		"/Users/cristian/programming/repositories/mean-box/edx-MongoDBx/Part 1 - Introduction to MongoDB and NodeJS/chapter1/interface.js",
+		"/Users/cristian/programming/repositories/mean-box/edx-MongoDBx/Part 1 - Introduction to MongoDB and NodeJS/chapter1/movies.json",
+		"/Users/cristian/programming/repositories/mean-box/edx-MongoDBx/Part 1 - Introduction to MongoDB and NodeJS/chapter1/test.js",
+		"/Users/cristian/programming/repositories/mean-box/.gitignore",
+		"/Users/cristian/programming/repositories/mean-box/edx-MongoDBx/README.md",
+		"/Users/cristian/programming/repositories/mean-box/edx-MongoDBx/Part 1 - Introduction to MongoDB and NodeJS/chapter1/README.md",
+		"/Users/cristian/programming/classes/Introduction to MongoDB using the MEAN Stack/MongoDBx: M101x Introduction to MongoDB using the",
+		"/Users/cristian/programming/repositories/mean-box/be-mean/README.md",
+		"/Users/cristian/Desktop/beMean",
+		"/Users/cristian/programming/classes/BeMean/01/mongodb-aula-01-exercicio.md",
+		"/Users/cristian/Desktop/test_a.html",
+		"/Users/cristian/Desktop/test.html",
+		"/Users/cristian/Desktop/sign.html",
+		"/Users/cristian/Desktop/Java 8 presentation/partidas.json",
+		"/Users/cristian/Desktop/Java 8 presentation/classificacao_central.json",
+		"/Users/cristian/Desktop/Java 8 presentation/artilharia.json",
+		"/Users/cristian/programming/repositories/java-box/lambdas-and-streams/README.md",
+		"/Users/cristian/Desktop/Java 8 presentation/dados.txt",
+		"/Users/cristian/Desktop/Notes - Lambdas & Streams",
+		"/Users/cristian/Desktop/Java 8 presentation/classificacao.json",
+		"/Users/cristian/Library/Application Support/Sublime Text 3/Packages/User/Pretty JSON.sublime-settings",
+		"/Users/cristian/Desktop/Java 8 presentation/stream/theStream.html",
+		"/Users/cristian/Downloads/RandomWordsSolution.java",
+		"/Users/cristian/programming/repositories/java-box/.gitignore",
+		"/Users/cristian/programming/Classes/Oracle/Lambdas and Streams/notes",
+		"/Users/cristian/programming/repositories/java-box/README.md",
+		"/Users/cristian/programming/Classes/Oracle/Lambdas and Streams/Lesson 2/Homework/Sonnetl.txt",
+		"/Users/cristian/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/cristian/Library/Mail/V2/MailData/Signatures/464F253A-6739-4E2C-B590-D843FD2EFA75.mailsignature",
+		"/Users/cristian/Documents/Personal/signature/emailsignature.html",
+		"/Users/cristian/Library/Mail/V2/MailData/Signatures/new_sig.mailsignature",
+		"/Users/cristian/Library/Mail/V2/MailData/Signatures/2E98D1FD-2C6E-4EB9-8CFB-AF4CDBDEA52B.mailsignature",
+		"/Users/cristian/Desktop/swagger.json",
+		"/Users/cristian/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/cristian/programming/java/oldworkspace/TELE/minhateleentrega/minhateleentrega-business/pom.xml",
+		"/Users/cristian/programming/java/oldworkspace/TELE/minhateleentrega/minhateleentrega-web/pom.xml",
+		"/Users/cristian/programming/java/oldworkspace/TELE/minhateleentrega/pom.xml",
+		"/Users/cristian/Desktop/canada",
+		"/Users/cristian/Downloads/ADP HTML email signature 2015/emailsignature_2.html",
+		"/Users/cristian/Desktop/signature.html",
+		"/Users/cristian/Downloads/ocristian.html",
+		"/Users/cristian/Desktop/sw/se.json",
+		"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target/pax_global_header",
+		"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target/apidocs/io/swagger/sample/resource/PetStoreResource.html",
+		"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target/apidocs/options",
+		"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target/m2e-wtp/web-resources/META-INF/maven/io.swagger/swagger-jersey2-sample-app/pom.xml",
+		"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target/m2e-wtp/web-resources/META-INF/maven/io.swagger/swagger-jersey2-sample-app/pom.properties",
+		"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF",
+		"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target/maven-archiver/pom.properties",
+		"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target/swagger-ui-master/test/specs/v2/petstore.json",
+		"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target/swagger-ui-master/test/e2e/v2.js",
+		"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target/swagger-ui-master/bower.json",
+		"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target/swagger-ui-master/index.js",
+		"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target/swagger-ui-master/package.json",
+		"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target/swagger-ui-master/dist/index.html",
+		"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target/swagger-ui-master/test/specs/v1.2/petstore/api-docs.json",
+		"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target/swagger-ui-master/gulpfile.js",
+		"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target/swagger-jersey2-sample-app-1.0.0/swagger-ui.js",
+		"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target/swagger-ui-master/test/e2e/servers.js",
+		"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target/swagger-ui-master/test/mocha.opts",
+		"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target/swagger-ui-master/test/specs/v1.2/petstore/pet.json",
+		"/Users/cristian/Downloads/swagger-samples-master/java/java-jaxrs-no-webxml/src/test/scala/ResourceListingIT.scala",
+		"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target/swagger-ui-master/src/main/javascript/SwaggerUi.js",
+		"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target/swagger-ui-master/src/main/less/auth.less",
+		"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target/swagger-ui-master/src/main/template/signature.handlebars",
+		"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target/swagger-ui-master/src/main/template/main.handlebars",
+		"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target/swagger-ui-master/src/main/template/apikey_button_view.handlebars",
+		"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target/swagger-ui-master/lang/ru.js",
+		"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target/swagger-ui-master/lang/en.js",
+		"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target/swagger-ui-master/lang/translator.js",
+		"/Users/cristian/.bash_profile",
+		"/Users/cristian/programming/Java/workspace/brewery/src/main/webapp/index.jsp",
+		"/Users/cristian/programming/Java/workspace/wine-cellar-java-master/WebContent/js/main.js",
+		"/Users/cristian/Downloads/kongchen-swagger-maven-plugin-0d320b3/src/main/java/com/github/kongchen/swagger/docgen/util/SpringUtils.java",
+		"/Users/cristian/Downloads/kongchen-swagger-maven-plugin-0d320b3/src/main/java/com/github/kongchen/swagger/docgen/spring/SpringResource.java",
+		"/Users/cristian/Downloads/kongchen-swagger-maven-plugin-0d320b3/src/main/java/com/github/kongchen/swagger/docgen/Utils.java",
+		"/Users/cristian/Downloads/kongchen-swagger-maven-plugin-0d320b3/pom.xml",
+		"/Users/cristian/Downloads/kongchen-swagger-maven-plugin-0d320b3/README.md",
+		"/Users/cristian/programming/softwares/apache-maven-3.2.5/conf/settings.xml"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"",
+			"/Users/cristian/programming/Java/workspace/swagger-samples-master/java/java-jersey2/target"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Peugeot 107",
+			"HERTZ",
+			"AVIS",
+			"hertz",
+			"1",
+			"degree",
+			"Sail",
+			"Spareday",
+			"Water Polo",
+			"STAURDAY",
+			"Olympic Aquatic Stadium",
+			",14,",
+			"14",
+			"Thurday",
+			"Tusday",
+			"JSON",
+			"stringfy",
+			"Advanced mongoose features: virtuals",
+			"Retail application schema: category",
+			"Retail application schema: user and cart",
+			"info",
+			"Parallel Stre",
+			"method re",
+			"paralle",
+			"findAn",
+			"findFir",
+			"min",
+			"toMap",
+			"Collect",
+			"collect",
+			"terminal opera",
+			"pipeline",
+			"intermediate Operations",
+			"functional inter",
+			"map(",
+			"Function",
+			"Intermediate Operations",
+			"Intermedia",
+			"Predicate",
+			"Predicate p",
+			"source",
+			"scor",
+			"scoe",
+			"count",
+			"score",
+			"lon",
+			"Function",
+			"Stream",
+			"reduc",
+			"group",
+			"equipe_id",
+			"Streams",
+			"titles",
+			"start",
+			"h1",
+			"start",
+			"h1",
+			"#####",
+			"Method References",
+			"sort",
+			"ints",
+			"print",
+			"random",
+			"simpl",
+			"2. Streams",
+			"stream",
+			"Comparator",
+			"sorte",
+			"distinct",
+			"flat",
+			"And",
+			"From",
+			"XP",
+			"REG",
+			"REGEXP",
+			"disti",
+			"Lesson 2.5",
+			"Lesson 1 - Lambda Expressions",
+			"* [Lesson 1 - Lambda Expressions](#lesson-1---lambda-expressions)\n",
+			"replaceAll",
+			"thread",
+			"key",
+			"Unar",
+			"66D29D248F6A",
+			"CSILVA",
+			"pet",
+			"your",
+			"your pet",
+			"swagger-ver"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"0",
+			"Saturday",
+			"Thursday",
+			"Tuesday"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/products/product-list.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1202,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								83,
+								83
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": true,
+								"indentSize": 2,
+								"tabSize": 2
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/products/product.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 201,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								157,
+								157
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"translate_tabs_to_spaces": true,
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/products/product-list.component.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2034,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1392,
+								1392
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Angular2 HTML Syntax/Angular2HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": true,
+								"indentSize": 4,
+								"tabSize": 4
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/app.module.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 469,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								469,
+								469
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"translate_tabs_to_spaces": true,
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "apm.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"json",
+				"~/Desktop/swagger.json"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 263.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
