@@ -41,7 +41,7 @@
 * Root Angular Module + Componentes
 * Feature Angular Module + Componentes
 
-#### Prerequisities
+#### Prerequisites
 
 * Required
   * JS
@@ -87,7 +87,7 @@
 
 #### App Startup
 
-   Index.html -> Systemjs.config.js -> main.ts -> app.module.ts -> app.component.ts -> index.html
+    Index.html -> Systemjs.config.js -> main.ts -> app.module.ts -> app.component.ts -> index.html
 
 #### Components
 
